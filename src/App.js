@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import AllMeetupsPage from "./components/AllMeetups";
-import NewMeetupPage from "./components/NewMeetup";
-import FavoritesPage from "./components/Favorites";
+import AllMeetupsPage from "./pages/AllMeetups";
+import NewMeetupPage from "./pages/NewMeetup";
+import FavoritesPage from "./pages/Favorites";
+import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
   return (
     <div>
+      <MainNavigation />
       <Routes>
         <Route exact path="/" element={<AllMeetupsPage />}></Route>
         <Route path="/new-meetup" element={<NewMeetupPage />}></Route>
