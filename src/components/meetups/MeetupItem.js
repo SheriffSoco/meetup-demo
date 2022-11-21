@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 
 function MeetupItem(props) {
   return (
-    <li key={props.meetup.id} className={classes.item}>
+    <li className={classes.item}>
       <Card>
         <div className={classes.image}>
           <img src={props.meetup.image} alt={props.meetup.title} />
